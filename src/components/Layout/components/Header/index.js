@@ -25,6 +25,7 @@ import { Wrapper as PopperWrapper } from "~/components/Popper";
 import AccountItem from "~/components/AccountItem";
 import Button from "~/components/Button";
 import Menu from "~/components/Popper/Menu";
+import Image from "~/components/Image";
 const cx = classNames.bind(styles);
 const MENU_ITEMS = [
   {
@@ -135,13 +136,14 @@ function Header() {
               <Tippy delay={[0, 200]} content="Messages" placement="bottom">
                 <button className={cx("action-btn")}>
                   {/* <FontAwesomeIcon icon={faPaperPlane} /> */}
-                  <img src={images.messages} alt="messages" />
+                  {/* <img src={images.messages} alt="messages" /> */}
+                  {images.messages()}
                 </button>
               </Tippy>
               <Tippy content="Inbox" placement="bottom">
                 <button className={cx("action-btn")}>
                   {/* <FontAwesomeIcon icon={faMessage} /> */}
-                  <img src={images.inbox} alt="messages" />
+                  {images.inbox()}
                 </button>
               </Tippy>
             </>
@@ -155,7 +157,7 @@ function Header() {
             onChange={handleMenuChange}
           >
             {currentUser ? (
-              <img
+              <Image
                 className={cx("user-avatar")}
                 src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/7839f291976400e716828ee1a3b4f786~c5_720x720.jpeg?x-expires=1660690800&amp;x-signature=s%2FtNAMvoeZBbFiNT%2F%2B6dD1GkMFE%3D"
                 alt="avatar"
