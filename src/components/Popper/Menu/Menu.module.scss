@@ -9,11 +9,15 @@
   }
 }
 .menu-popper {
+  line-height: 22px;
   padding: 8px 0px;
 }
 .menu-item {
   &:hover {
     background: rgba(22, 24, 35, 0.03);
+  }
+  &.separate {
+    border-top: 1px solid rgba(22, 24, 35, 0.12);
   }
 }
 

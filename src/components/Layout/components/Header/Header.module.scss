@@ -95,6 +95,7 @@
 
 .actions {
   display: flex;
+  align-items: center;
   .plus-icon {
     // line-height: 100%;
     position: absolute;
@@ -116,4 +117,23 @@
 }
 .menu-items {
   width: 224px;
+}
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(22, 24, 35, 1);
+  background: transparent;
+  height: 32px;
+  width: 32px;
+  padding: 3px 3px 0;
+  margin-left: 16px;
+  cursor: pointer;
+}
+.user-avatar {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  margin-left: 24px;
+  object-fit: cover;
 }

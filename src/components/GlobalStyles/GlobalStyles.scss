@@ -8,7 +8,7 @@
   --default-layout-horizontal-spacer: 24px;
   //
   --black: #000;
-  --text-color: #333;
+  --text-color: rgba(22, 24, 35, 1);
   --primary-color: rgba(254, 44, 85, 1);
 }
 * {
@@ -36,4 +36,23 @@ input,
 a[href] {
   color: var(--text-color);
   text-decoration: none;
+}
+body {
+  .tippy-box {
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    background-color: rgba(84, 84, 84, 0.92);
+    color: rgb(255, 255, 255);
+    padding: 8px;
+  }
+  .tippy-content {
+  }
+  .tippy-arrow {
+    // background-color: rgba(84, 84, 84, 0.92);
+  }
+  .tippy-arrow::before {
+    color: rgba(84, 84, 84, 0.92);
+  }
 }

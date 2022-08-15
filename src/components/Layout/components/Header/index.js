@@ -1,17 +1,24 @@
 import classNames from "classnames/bind";
 import styles from "./Header.module.scss";
 import images from "~/assets/images";
-import Tippy from "@tippyjs/react/headless";
-// import "tippy.js/dist/tippy.css"; // optional
+import Tippy from "@tippyjs/react";
+import Headeless from "@tippyjs/react/headless";
+import "tippy.js/dist/tippy.css"; // optional
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleQuestion,
   faCircleXmark,
+  faCoins,
   faEarthAsia,
   faEllipsisVertical,
+  faGear,
   faKeyboard,
   faMagnifyingGlass,
+  faMessage,
+  faPaperPlane,
+  faSignOut,
   faSpinner,
+  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 import { Wrapper as PopperWrapper } from "~/components/Popper";
@@ -49,6 +56,7 @@ const MENU_ITEMS = [
 ];
 function Header() {
   const [searchResult, setSearchResult] = useState([]);
+  const currentUser = true;
   useEffect(() => {
     setTimeout(() => {
       // setSearchResult(["a", "b"]);
@@ -58,13 +66,37 @@ function Header() {
     //handle
     console.log(menuItem);
   };
+  const userMenu = [
+    {
+      icon: <FontAwesomeIcon icon={faUser} />,
+      title: "View profile",
+      to: "/feedback",
+    },
+    {
+      icon: <FontAwesomeIcon icon={faCoins} />,
+      title: "Get coins",
+      to: "/coin",
+    },
+    {
+      icon: <FontAwesomeIcon icon={faGear} />,
+      title: "Settings",
+      to: "/settings",
+    },
+    ...MENU_ITEMS,
+    {
+      icon: <FontAwesomeIcon icon={faSignOut} />,
+      title: "Log out",
+      to: "/logout",
+      separate: true,
+    },
+  ];
   return (
     <header className={cx("wrapper")}>
       <div className={cx("inner")}>
         <div className={cx("logo")}>
           <img src={images.logo} alt="tiktok" />
         </div>
-        <Tippy
+        <Headeless
           interactive={true}
           visible={searchResult.length > 0}
           render={(attrs) => (
@@ -90,8 +122,7 @@ function Header() {
               <FontAwesomeIcon icon={faMagnifyingGlass} />
             </button>
           </div>
-        </Tippy>
-
+        </Headeless>
         <div className={cx("actions")}>
           <Button text>
             <span>
@@ -99,12 +130,41 @@ function Header() {
             </span>
             <span className={cx("text-content")}>Upload</span>
           </Button>
-
-          <Button primary>Log in</Button>
-          <Menu items={MENU_ITEMS} onChange={handleMenuChange}>
-            <button className={cx("more-btn")}>
-              <FontAwesomeIcon icon={faEllipsisVertical}></FontAwesomeIcon>
-            </button>
+          {currentUser ? (
+            <>
+              <Tippy delay={[0, 200]} content="Messages" placement="bottom">
+                <button className={cx("action-btn")}>
+                  {/* <FontAwesomeIcon icon={faPaperPlane} /> */}
+                  <img src={images.messages} alt="messages" />
+                </button>
+              </Tippy>
+              <Tippy content="Inbox" placement="bottom">
+                <button className={cx("action-btn")}>
+                  {/* <FontAwesomeIcon icon={faMessage} /> */}
+                  <img src={images.inbox} alt="messages" />
+                </button>
+              </Tippy>
+            </>
+          ) : (
+            <>
+              <Button primary>Log in</Button>
+            </>
+          )}
+          <Menu
+            items={currentUser ? userMenu : MENU_ITEMS}
+            onChange={handleMenuChange}
+          >
+            {currentUser ? (
+              <img
+                className={cx("user-avatar")}
+                src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/7839f291976400e716828ee1a3b4f786~c5_720x720.jpeg?x-expires=1660690800&amp;x-signature=s%2FtNAMvoeZBbFiNT%2F%2B6dD1GkMFE%3D"
+                alt="avatar"
+              />
+            ) : (
+              <button className={cx("more-btn")}>
+                <FontAwesomeIcon icon={faEllipsisVertical}></FontAwesomeIcon>
+              </button>
+            )}
           </Menu>
         </div>
       </div>
