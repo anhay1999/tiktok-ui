@@ -36,6 +36,142 @@ const MENU_ITEMS = [
           code: "vi",
           title: "Tiếng Việt",
         },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "en",
+          title: "English",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "en",
+          title: "English",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "en",
+          title: "English2",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "en",
+          title: "English",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "en",
+          title: "English1",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
+        {
+          code: "vi",
+          title: "Tiếng Việt",
+        },
       ],
     },
   },

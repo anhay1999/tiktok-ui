@@ -12,6 +12,9 @@
   line-height: 22px;
   padding: 8px 0px;
 }
+.menu-body {
+  overflow-y: auto;
+}
 .menu-item {
   &:hover {
     background: rgba(22, 24, 35, 0.03);
@@ -26,6 +29,7 @@
   position: relative;
   height: 50px;
   margin-top: -8px;
+  flex-shrink: 0;
 }
 
 .back-btn {

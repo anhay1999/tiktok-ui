@@ -11,7 +11,6 @@ import classNames from "classnames/bind";
 import styles from "./Search.module.scss";
 import { useDebounce } from "~/hooks";
 import { useEffect, useState, useRef } from "react";
-import * as request from "~/utils/request";
 import * as searchServices from "~/apiServices/searchService";
 const cx = classNames.bind(styles);
 function Search() {
@@ -63,6 +62,7 @@ function Search() {
   return (
     <div>
       <Headeless
+        // appendTo={() => document.body}
         interactive={true}
         visible={showResult && searchResult.length > 0}
         render={(attrs) => (
