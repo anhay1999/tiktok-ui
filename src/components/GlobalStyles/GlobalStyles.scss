@@ -10,6 +10,7 @@
   --black: #000;
   --text-color: rgba(22, 24, 35, 1);
   --primary-color: rgba(254, 44, 85, 1);
+  --font-family: "ProximaNova";
 }
 
 * {
@@ -21,7 +22,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-family: "ProximaNova";
+  font-family: var(--font-family);
   font-size: 1.6rem;
   text-rendering: optimizeSpeed;
   color: var(--text-color);

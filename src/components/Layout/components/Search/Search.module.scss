@@ -19,6 +19,7 @@
     background-color: transparent;
     caret-color: red;
     flex: 1;
+    font-family: var(--font-family);
   }
 
   input:not(:placeholder-shown) ~ .search-btn {
