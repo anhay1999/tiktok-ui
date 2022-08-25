@@ -11,12 +11,12 @@ import classNames from "classnames/bind";
 import styles from "./Search.module.scss";
 import { useDebounce } from "~/hooks";
 import { useEffect, useState, useRef } from "react";
-import * as searchServices from "~/apiServices/searchService";
+import * as searchServices from "~/services/searchService";
 const cx = classNames.bind(styles);
 function Search() {
   const [searchValue, setSearchValue] = useState("");
   const [searchResult, setSearchResult] = useState([]);
-  const [showResult, setShowResult] = useState(true);
+  const [showResult, setShowResult] = useState(false);
   const [loading, setLoading] = useState(false);
 
   const debounce = useDebounce(searchValue, 500);
