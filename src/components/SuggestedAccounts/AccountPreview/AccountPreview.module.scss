@@ -1,0 +1,66 @@
+.wrapper {
+  padding: 20px;
+  width: 320px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 12%) 0px 4px 16px;
+  border-radius: 8px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.follow-btn {
+  padding: 6px 8px;
+  border-radius: 4px;
+  min-width: 106px;
+  min-height: 28px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.body {
+}
+.nickname {
+  color: rgb(22, 24, 35);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+}
+.check-icon {
+  width: 14px;
+  height: 14px;
+  color: rgb(32, 213, 236);
+  margin-left: 4px;
+  margin-top: 2px;
+}
+.name {
+  color: rgb(22, 24, 35);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}
+.analytics {
+  margin-top: 8px;
+}
+.value {
+  font-weight: 700;
+  margin-right: 6px;
+  font-size: 17px;
+}
+.label {
+  margin-right: 12px;
+  color: rgba(22, 24, 35, 0.75);
+  font-size: 17px;
+}

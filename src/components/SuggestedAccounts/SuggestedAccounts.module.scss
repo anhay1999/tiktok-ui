@@ -1,0 +1,76 @@
+.wrapper {
+  //   &::before {
+  //     content: "123";
+  //     position: absolute;
+  //     left: 8px;
+  //     right: 8px;
+  //     top: 0;
+  //     height: 1px;
+  //     background: rgba(22, 24, 35, 0.12);
+  //   }
+  background-color: rgb(255, 255, 255);
+  padding: 16px 0;
+  border-top: 1px solid rgba(22, 24, 35, 0.12);
+}
+.popper {
+  padding-top: 0px;
+}
+.label {
+  padding: 0 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.account-item {
+  padding: 8px;
+  display: flex;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color ease-in-out 200ms;
+  &:hover {
+    background-color: rgba(22, 24, 35, 0.03);
+  }
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+.item-info {
+}
+
+.nickname {
+  display: flex;
+}
+.check {
+  line-height: 20px;
+  margin-top: -5px;
+}
+.check-icon {
+  color: #20d5ec;
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 4px;
+}
+.name {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  max-width: 260px;
+  color: rgba(22, 24, 35, 0.75);
+}
+.see-all {
+  padding: 0px 8px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+.more-btn {
+  color: rgb(254, 44, 85);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}

@@ -3,6 +3,7 @@ import classNames from "classnames/bind";
 import Menu, { MenuItem } from "./Menu";
 import config from "~/config";
 import images from "~/assets/images";
+import SuggestedAccounts from "~/components/SuggestedAccounts";
 const cx = classNames.bind(styles);
 function Sidebar() {
   return (
@@ -27,6 +28,7 @@ function Sidebar() {
           activeIcon={<images.ActiveLive />}
         />
       </Menu>
+      <SuggestedAccounts label="Suggested accounts" />
     </aside>
   );
 }
