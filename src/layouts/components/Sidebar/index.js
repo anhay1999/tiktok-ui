@@ -4,6 +4,9 @@ import Menu, { MenuItem } from "./Menu";
 import config from "~/config";
 import images from "~/assets/images";
 import SuggestedAccounts from "~/components/SuggestedAccounts";
+import FollowingAccounts from "~/components/FollowingAccounts";
+import Discover from "~/components/Discover";
+import Footer from "~/components/Footer";
 const cx = classNames.bind(styles);
 function Sidebar() {
   return (
@@ -29,6 +32,9 @@ function Sidebar() {
         />
       </Menu>
       <SuggestedAccounts label="Suggested accounts" />
+      <FollowingAccounts />
+      <Discover />
+      <Footer />
     </aside>
   );
 }

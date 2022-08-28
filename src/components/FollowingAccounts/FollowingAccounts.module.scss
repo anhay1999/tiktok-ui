@@ -1,0 +1,54 @@
+//Following Accounts
+.wrapper {
+  border-top: 1px solid rgba(22, 24, 35, 0.12);
+}
+.title {
+  padding: 12px 8px 0px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  line-height: 20px;
+}
+//AccountItem
+.account-item {
+  padding: 8px;
+  display: flex;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color ease-in-out 200ms;
+  &:hover {
+    background-color: rgba(22, 24, 35, 0.03);
+  }
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+}
+
+.item-info {
+}
+
+.nickname {
+  display: flex;
+}
+.name {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  max-width: 260px;
+  color: rgba(22, 24, 35, 0.75);
+}
+.see-all {
+  padding: 0px 8px;
+  margin-top: 8px;
+  cursor: pointer;
+}
+.more-btn {
+  color: rgb(254, 44, 85);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+}

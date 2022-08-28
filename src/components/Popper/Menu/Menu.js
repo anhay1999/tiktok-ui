@@ -16,7 +16,7 @@ function Menu({
 }) {
   const [history, setHistory] = useState([{ data: items }]);
   const current = history[history.length - 1];
-  console.log(history);
+  // console.log(history);
   const renderItems = () => {
     return (
       <Fragment>

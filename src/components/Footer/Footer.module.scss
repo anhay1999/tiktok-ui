@@ -1,0 +1,20 @@
+.wrapper {
+  border-top: 1px solid rgba(22, 24, 35, 0.12);
+  padding-top: 16px;
+  padding-left: 8px;
+}
+.copy-right,
+.link {
+  color: rgba(22, 24, 35, 0.5);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 17px;
+  display: inline-block;
+  margin-right: 6px;
+  margin-top: 5px;
+}
+.link {
+  &:hover {
+    text-decoration: underline;
+  }
+}
